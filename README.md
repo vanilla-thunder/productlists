@@ -4,8 +4,8 @@ Functions:
 
 Compytibility:
 ====================
-CE 4.6.5 + 
-CE 4.7.1 + 
++ CE 4.6.5  
++ CE 4.7.1   
 
 Installation:
 ====================
