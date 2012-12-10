@@ -2,7 +2,7 @@ Functions:
 ====================
 * displaying the newest articles of the active category
 
-Compytibility:
+Compatibility:
 ====================
 + CE 4.6.5  
 + CE 4.7.1   
