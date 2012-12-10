@@ -2,6 +2,10 @@ Functions:
 ====================
 * displaying the newest articles of the active category
 
+Compytibility:
+====================
+CE 4.6.5 + 
+CE 4.7.1 + 
 
 Installation:
 ====================
