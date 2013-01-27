@@ -1,3 +1,7 @@
+Current Version: 1.0.1 
+====================
+this version contains a bugfix caused not loading article objects properly and also wrong links to the articles
+
 Functions:
 ====================
 * displaying the newest articles of the active category
@@ -16,7 +20,7 @@ You will find the code snippet in the module description in OXID backend
 
 vt Newest Category Articles (module for OXID eSales)
 ====================
-Copyright (C) 2012  Marat Bedoev
+Copyright (C) 2012 - 2013  Marat Bedoev
 
 This program is free software;
 you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
