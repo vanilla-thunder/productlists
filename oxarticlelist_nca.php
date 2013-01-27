@@ -41,7 +41,6 @@ class oxarticlelist_nca extends oxarticlelist_nca_parent {
 			$iLimit = $myConfig->getConfigParam('iNrofNewcomerArticles');
 		}
 		$sSelect .= "limit " . $iLimit;
-var_dump($sSelect);
 		$this->selectString($sSelect);
 	}
 
