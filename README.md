@@ -1,6 +1,8 @@
 Current Version: 1.0.1 
 ====================
 this version contains a bugfix caused not loading article objects properly and also wrong links to the articles
+this is just a workaround for this problem not a final fix, there will another update soon.
+please contact me if you should experince some bugs.
 
 Functions:
 ====================
