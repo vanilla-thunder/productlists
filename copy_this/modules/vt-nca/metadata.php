@@ -21,7 +21,8 @@ $aModule = array(
 edit the vt-nca/out/blocks/category_newestarticles.tpl file to change the appearance',
     'thumbnail' => 'oxid-vt.jpg',
     'version' => '1.0.1 (2013-01-27)</dd><dt>newest version</dt><dd><img src="https://raw.github.com/vanilla-thunder/vt-nca/module/version.jpg" /><br/>
-		 <a style="display: inline-block; padding: 1px 15px; background: #f0f0f0; border: 1px solid gray" href="https://github.com/vanilla-thunder/hdi-tinymce/" target="_blank">info</a> <a style="display: inline-block; padding: 1px 15px; background: #f0f0f0; border: 1px solid gray" href="https://github.com/vanilla-thunder/vt-nca/archive/master.zip">download</a>',
+		 <a style="display: inline-block; padding: 1px 15px; background: #f0f0f0; border: 1px solid gray" href="https://github.com/vanilla-thunder/vt-nca/" target="_blank">info</a>
+		 <a style="display: inline-block; padding: 1px 15px; background: #f0f0f0; border: 1px solid gray" href="https://github.com/vanilla-thunder/vt-nca/archive/master.zip">download</a>',
     'author' => 'Marat Bedoev',
     'email' => 'oxid@marat-bedoev.net',
     'url' => 'https://github.com/vanilla-thunder/',
