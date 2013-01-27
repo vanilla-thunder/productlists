@@ -28,6 +28,7 @@ edit the vt-nca/out/blocks/category_newestarticles.tpl file to change the appear
     'url' => 'https://github.com/vanilla-thunder/',
     'extend' => array(
         'alist' => 'vt-nca/alist_nca',
+        'manufacturerlist' => 'vt-nca/manufacturerlist_nca',
         'start' => 'vt-nca/start_nca',
         'oxarticlelist' => 'vt-nca/oxarticlelist_nca',
     ),
