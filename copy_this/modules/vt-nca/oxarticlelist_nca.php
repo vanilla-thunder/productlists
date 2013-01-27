@@ -1,7 +1,7 @@
 <?php
 /**
  * vt Newest Category Articles
- * Copyright (C) 2012  Marat Bedoev
+ * Copyright (C) 2013  Marat Bedoev
  * 
  * This program is free software;
  * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -33,15 +33,15 @@ class oxarticlelist_nca extends oxarticlelist_nca_parent {
 		} else {
 			$sType = 'oxtimestamp';
 		}
-		$sSelect = "select * from $sArticleTable ";
-		$sSelect .= "RIGHT JOIN oxobject2category ON $sArticleTable.oxid = oxobject2category.oxobjectid ";
+		$sSelect = "select * from oxobject2category ";
+		$sSelect .= "RIGHT JOIN $sArticleTable ON $sArticleTable.oxid = oxobject2category.oxobjectid ";
 		$sSelect .= "WHERE oxobject2category.oxcatnid = '" . $soxId . "' and " . $this->getBaseObject()->getSqlActiveSnippet() . " and oxissearch = 1 order by $sType desc ";
 
 		if (!($iLimit = (int) $iLimit)) {
 			$iLimit = $myConfig->getConfigParam('iNrofNewcomerArticles');
 		}
 		$sSelect .= "limit " . $iLimit;
-
+var_dump($sSelect);
 		$this->selectString($sSelect);
 	}
 
