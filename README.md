@@ -6,7 +6,8 @@ please contact me if you should experince some bugs.
 
 Functions:
 ====================
-* displaying the newest articles of the active category
+* displaying the newest articles of a category
+* also the newest articles of a manufacturer
 
 Compatibility:
 ====================
