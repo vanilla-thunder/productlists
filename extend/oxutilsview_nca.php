@@ -12,18 +12,26 @@
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>
  */
-class start_nca extends start_nca_parent {
+class oxutilsview_nca extends oxutilsview_nca_parent
+{
 
-	public function getNewestCategoryArticles($soxId = null) {
-		if ($this->_getLoadActionsParam() && $soxId !== null) {
-			// newest articles
-			$oArtList = oxNew('oxarticlelist');
-			$oArtList->loadNewestCategoryArticles($soxId);
-			if ($oArtList->count()) {
-				return $oArtList;
-			}
-		}
-		return false;
+	public function getSmarty($blReload = false)
+    {
+        $smarty = parent::getSmarty($blReload);
+        $smarty->register_function( 'nca',  array( $this, 'smarty_function_newestCategoryArticles' ) );
+        return $smarty;
+    }
+
+	function smarty_function_newestCategoryArticles( $params, &$smarty )
+	{
+		return print_r($this->getViewConfig());
+		if(!$params) return print_r($this,true);
+		elseif(!$params['oxid']) return "<!-- please set category oxID: [{nca oxid='xyz' }] -->";
+		
+		$oxid = $params['oxid'];
+		$oArtList = oxNew('oxarticlelist');
+		$oArtList->loadNewestCategoryArticles($oxid);
+		return ($oArtList->count()) ? $oArtList : false;
 	}
 
 }
