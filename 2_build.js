@@ -12,33 +12,35 @@ var shell = function (command) {
     );
 };
 
-
 var version = process.argv[2];
-if (!version) process.exit(9);
+if (!version) {
+    console.log(" --- no version specified ---");
+    process.exit(1);
+}
 
-// cleanup
-shell("rm -rf _module/core");
-shell("rm -rf _module/tinymce");
-shell("rm -rf _module/views");
-shell("rm -rf _master/copy_this/modules/bla/bla-tinymce");
+// oxversion
+shell('oxversion ' + version);
+
+shell("rm -rf _module/application");
+shell("rm -rf _module/extend");
+shell("rm -rf _master/copy_this/modules/vt-nca");
 console.log("");
 console.log("     cleanup finished");
 
-// oxversion
-r('http://dev.marat.ws/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg', true));
-
 // copy files
-shell("cp -r core _module/core");
-shell("cp -r tinymce _module/tinymce");
-shell("cp -r views _module/views");
+shell("cp -r application _module/application");
+shell("cp -r extend _module/extend");
 shell("cp metadata.php _module/metadata.php");
+shell("cp oxid-vt.jpg _module/oxid-vt.jpg");
+shell("cp version.jpg _module/version.jpg");
 shell("cp README.md _module/README.md");
+
 console.log("     new files copied");
 
 // compile some files
-var module = 'TinyMCE WYSIWYG Editor for OXID eShop',
-    company = 'bestlife AG',
-    email = 'oxid@bestlife.ag',
+var module = 'Newest Category Articles for OXID eShop',
+    company = 'vt',
+    email = 'm@marat.ws',
     year = '2015';
 
 replace({
@@ -80,7 +82,7 @@ replace({
 process.on('exit', function (code) {
     console.log("     replacing complete");
     // copy module to master
-    shell("cp -r _module _master/copy_this/modules/bla/bla-tinymce");
+    shell("cp -r _module _master/copy_this/modules/vt-nca");
     shell("cp _module/README.md _master/README.md");
     console.log("");
     console.log("     build complete! made my day!");

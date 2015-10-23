@@ -14,7 +14,7 @@
  */
 class oxarticlelist_nca extends oxarticlelist_nca_parent {
 
-	public function loadNewestCategoryArticles($soxId = null) {
+	public function loadNewestCategoryArticles($soxId = null, $iLimit = null) {
 
 		if ($soxId == null) {
 			return false;
@@ -44,7 +44,7 @@ class oxarticlelist_nca extends oxarticlelist_nca_parent {
 		$sSelect .= "limit " . $iLimit;
 		$this->selectString($sSelect);
 	}
-	public function loadNewestManufacturerArticles($smId = null) {
+	public function loadNewestManufacturerArticles($smId = null, $iLimit = null) {
 
 		if ($smId == null) {
 			return false;

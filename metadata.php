@@ -30,15 +30,7 @@ $aModule = array(
     'url'         => 'https://github.com/vanilla-thunder/vt-nca',
     'extend'      => array(
         'oxutilsview'      => 'vt-nca/extend/oxutilsview_nca',
-        'alist'            => 'vt-nca/extend/alist_nca',
         'manufacturerlist' => 'vt-nca/extend/manufacturerlist_nca',
         'oxarticlelist'    => 'vt-nca/extend/oxarticlelist_nca',
-    ),
-    'blocks'      => array(
-        array(
-            'template' => 'page/list/list.tpl',
-            'block'    => 'category_newestarticles',
-            'file'     => '/views/blocks/category_newestarticles.tpl'
-        )
     )
 );
