@@ -39,7 +39,7 @@ console.log("     new files copied");
 
 // compile some files
 var module = 'Newest Category Articles for OXID eShop',
-    company = 'vt',
+    company = 'Marat Bedoev',
     email = 'm@marat.ws',
     year = '2015';
 
