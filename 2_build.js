@@ -39,6 +39,7 @@ console.log("     new files copied");
 
 // compile some files
 var module = 'Newest Category Articles for OXID eShop',
+    vendor = '[vt]',
     company = 'Marat Bedoev',
     email = 'm@marat.ws',
     year = '2015';
@@ -46,6 +47,13 @@ var module = 'Newest Category Articles for OXID eShop',
 replace({
     regex: "###_MODULE_###",
     replacement: module,
+    paths: ['./_module'],
+    recursive: true,
+    silent: true
+});
+replace({
+    regex: "###_VENDOR_###",
+    replacement: vendor,
     paths: ['./_module'],
     recursive: true,
     silent: true

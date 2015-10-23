@@ -1,4 +1,4 @@
-## ###_COMPANY_### - ###_MODULE_###
+## ###_VENDOR_### - ###_MODULE_###
 ### module version ###_VERSION_###
 display newest category articles for the current active or another particular category
 
@@ -42,7 +42,7 @@ display newest category articles for the current active or another particular ca
 ## more info here: [http:/marat.ws/vt-nca/](http:/marat.ws/vt-nca/)
 
 ### LICENSE AGREEMENT
-   ###_COMPANY_### - ###_MODULE_###  
+   ###_VENDOR_### - ###_MODULE_###  
    Copyright (C) ###_YEAR_###  ###_COMPANY_###  
    info:  ###_EMAIL_###  
      
