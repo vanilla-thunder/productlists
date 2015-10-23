@@ -1,8 +1,8 @@
 <?php
 
 /*
- * vt - Newest Category Articles for OXID eShop
- * Copyright (C) 2015  vt
+ * Marat Bedoev - Newest Category Articles for OXID eShop
+ * Copyright (C) 2015  Marat Bedoev
  * info:  m@marat.ws
  *
  * GNU GENERAL PUBLIC LICENSE  
@@ -25,7 +25,7 @@ $aModule = array(
     'description' => 'Newest Category Articles for OXID eShop 4.9<br/><b style="display:inline-block;float:left;line-height:18px;">newest version:</b><img src="' . $v . '"/><br/>(no need to update if you already have this version)',
     'thumbnail'   => 'oxid-vt.jpg',
     'version'     => '1.1.0',
-    'author'      => 'Marat Bedoev, vt',
+    'author'      => 'Marat Bedoev, Marat Bedoev',
     'email'       => 'm@marat.ws',
     'url'         => 'https://github.com/vanilla-thunder/vt-nca',
     'extend'      => array(

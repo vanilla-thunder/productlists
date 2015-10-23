@@ -1,4 +1,4 @@
-## vt - Newest Category Articles for OXID eShop
+## Marat Bedoev - Newest Category Articles for OXID eShop
 ### module version 1.1.0
 display newest category articles for the current active or another particular category
 
@@ -42,8 +42,8 @@ display newest category articles for the current active or another particular ca
 ## more info here: [http:/marat.ws/vt-nca/](http:/marat.ws/vt-nca/)
 
 ### LICENSE AGREEMENT
-   vt - Newest Category Articles for OXID eShop  
-   Copyright (C) 2015  vt  
+   Marat Bedoev - Newest Category Articles for OXID eShop  
+   Copyright (C) 2015  Marat Bedoev  
    info:  m@marat.ws  
      
    GNU GENERAL PUBLIC LICENSE  
