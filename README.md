@@ -1,8 +1,9 @@
 ## additional product list for OXID eShop CE
-by Marat Bedoev  <m@marat.ws>  
-https://github.com/vanilla-thunder/vt-productlists
+by Marat Bedoev  
 module version 1.2.0
 
+## How to use:
+inseret follwing code into your template or cms page and set oxID of a category as _oxid=""_ parameter:  
 __newest category products / neuste Produkte der Kategorie:__  
 ``[{ newest_products oxid=""  }]``   
 __random category products / zufällige Produkte der Kategorie:__  
@@ -10,7 +11,7 @@ __random category products / zufällige Produkte der Kategorie:__
 __category topseller / Topseller der Kategorie:__  
 ``[{ topseller oxid=""  }]``
 
-### additional parameters:
+### additional parameters / zusätzliche Parameter:
 * add ``[{ ... subcats=true}]`` for loading products from this category and all its children.  
   
 * add ``[{ ... amount="2"}]`` for custom amount of products to show.  
