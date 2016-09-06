@@ -25,7 +25,7 @@ $aModule = array(
     'description' => '###_MODULE_### 4.9<br/><b style="display:inline-block;float:left;line-height:18px;">newest version:</b><img src="' . $v . '"/><br/>(no need to update if you already have this version)',
     'thumbnail'   => 'oxid-vt.jpg',
     'version'     => '###_VERSION_###',
-    'author'      => 'Marat Bedoev, ###_COMPANY_###',
+    'author'      => '###_AUTHOR_###, ###_COMPANY_###',
     'email'       => '###_EMAIL_###',
     'url'         => 'https://github.com/vanilla-thunder/vt-productlists',
     'extend'      => array(
