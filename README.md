@@ -1,6 +1,6 @@
 ## additional product list for OXID eShop
 by Marat Bedoev  
-https://github.com/vanilla-thunder/vt-productlists
+https://github.com/vanilla-thunder/vt-productlists  
 module version 1.3.0
 
 ## How to use:
@@ -21,7 +21,7 @@ __category topseller / Topseller der Kategorie:__
 * add ``[{ ... file="widget/product/list.tpl"}]`` to use custom template  
   default template is _widet/product/list.tpl_
 
-* add ``[{ ... type="infogrid"}]`` to change list type
+* add ``[{ ... type="infogrid"}]`` to change list type  
   default list type is _grid_
   
 * add ``[{ ... head=""}]`` for custom title  
