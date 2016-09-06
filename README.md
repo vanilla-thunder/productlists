@@ -21,8 +21,8 @@ __category topseller / Topseller der Kategorie:__
 * add ``[{ ... file="widget/product/list.tpl"}]`` to use custom template  
   default template is _widet/product/list.tpl_
 
-* add ``[{ ... type="infogrid"}]`` to change list type  
-  default template is _grid_
+* add ``[{ ... type="infogrid"}]`` to change list type
+  default list type is _grid_
   
 * add ``[{ ... head=""}]`` for custom title  
   apply __|oxmultilangassign__ when using language idents: ``[{ ... head="LANG_IDENT"|oxmultilangassign }]``
