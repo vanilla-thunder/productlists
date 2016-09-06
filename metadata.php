@@ -16,21 +16,21 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>
  */
  
-$v = "https://raw.githubusercontent.com/vanilla-thunder/vt-nca/master/copy_this/modules/vt-nca/version.jpg";
+$v = "https://raw.githubusercontent.com/vanilla-thunder/vt-productlists/master/copy_this/modules/vt-productlists/version.jpg";
 
 $sMetadataVersion = '1.1';
 $aModule = array(
-    'id'          => 'vt-nca',
-    'title'       => '<strong style="color:#c700bb;border: 1px solid #c700bb;padding: 0 2px;background:white;">vt</strong> Newest Category Articles',
+    'id'          => 'vt-productlists',
+    'title'       => '[vt] product lists',
     'description' => '###_MODULE_### 4.9<br/><b style="display:inline-block;float:left;line-height:18px;">newest version:</b><img src="' . $v . '"/><br/>(no need to update if you already have this version)',
     'thumbnail'   => 'oxid-vt.jpg',
     'version'     => '###_VERSION_###',
     'author'      => 'Marat Bedoev, ###_COMPANY_###',
     'email'       => '###_EMAIL_###',
-    'url'         => 'https://github.com/vanilla-thunder/vt-nca',
+    'url'         => 'https://github.com/vanilla-thunder/vt-productlists',
     'extend'      => array(
-        'oxutilsview'      => 'vt-nca/extend/oxutilsview_nca',
-        'manufacturerlist' => 'vt-nca/extend/manufacturerlist_nca',
-        'oxarticlelist'    => 'vt-nca/extend/oxarticlelist_nca',
+        'oxutilsview'      => 'vt-productlists/extend/oxutilsview_vtproductlists',
+        'manufacturerlist' => 'vt-productlists/extend/manufacturerlist_vtproductlists',
+        'oxarticlelist'    => 'vt-productlists/extend/oxarticlelist_vtproductlists'
     )
 );

@@ -1,28 +1,30 @@
-## ###_VENDOR_### - ###_MODULE_###
-### module version ###_VERSION_###
-display newest category articles for the current active or another particular category
+## ###_MODULE_###
+by ###_AUTHOR_###  
+###_URL_###
+module version ###_VERSION_###
 
-## examples of usage / Anwendungsbeispiele:
-  * ``[{ vt_nca }]``  
-  in __list.tpl__ it will add small widget with newest category articles  
-  for __start.tpl__ you have to set an active category in general settings
-  * ``[{ vt_nca amount="2"}]``  
-  use __amount=""__ to adjust the amount of articles to show  
-  the default value is taken from oxid setting "amount of newest articles"
-  * ``[{ vt_nca file="widget/product/list.tpl"}]``  
-  use __file=""__ to set custom template  
-  default template is _widet/product/boxproducts.tpl_  
-  also fully supported is _widget/product/list.tpl_
-  * ``[{ vt_nca head=""}]``  
-  use __head=""__ to customize widget title  
-  default template _widet/product/boxproducts.tpl_ requires a multilanguage ident  
-  _widget/product/list.tpl_ accepts titles directly
-  * ``[{ vt_nca assign=""}]``  
-  use __assign=""__ to assign the oxArticleList to a custom variable in template.    
-  you can use it with a foreach loop to iterate through all articles.
+## How to use:
+inseret follwing code into your template or cms page and set oxID of a category as _oxid=""_ parameter:  
+__newest category products / neuste Produkte der Kategorie:__  
+``[{ newest_products oxid=""  }]``   
+__random category products / zufällige Produkte der Kategorie:__  
+``[{ random_products oxid=""  }]``  
+__category topseller / Topseller der Kategorie:__  
+``[{ topseller oxid=""  }]``
+
+### additional parameters / zusätzliche Parameter:
+* add ``[{ ... subcats=true}]`` for loading products from this category and all its children.  
   
-  * you can combine __file__ + __head__ + __amount__  
-  or __amount__ + __assign__
+* add ``[{ ... amount="2"}]`` for custom amount of products to show.  
+  the default value is taken from oxid setting "amount of newest articles"
+  
+* add ``[{ ... file="widget/product/list.tpl"}]`` to use custom template  
+  default template is _widet/product/list.tpl_
+  
+* add ``[{ ... head=""}]`` for custom title  
+  apply __|oxmultilangassign__ when using language idents: ``[{ ... head="LANG_IDENT"|oxmultilangassign }]``
+    
+* add ``[{ ... assign=""}]`` to assign products to a variable instead of direct output in template 
 
 ##  Installation [DE]
   * Archiv herunterladen und entpacken
@@ -39,11 +41,10 @@ display newest category articles for the current active or another particular ca
   * загрузить содержимое copy_this/ на сервер
   * активировать модуль
 
-## more info here: [http:/marat.ws/vt-nca/](http:/marat.ws/vt-nca/)
 
 ### LICENSE AGREEMENT
-   ###_VENDOR_### - ###_MODULE_###  
-   Copyright (C) ###_YEAR_###  ###_COMPANY_###  
+   ###_MODULE_###  
+   Copyright (C) ###_YEAR_### ###_COMPANY_###  
    info:  ###_EMAIL_###  
      
    GNU GENERAL PUBLIC LICENSE  
