@@ -3,7 +3,6 @@ by Marat Bedoev
 https://github.com/vanilla-thunder/vt-productlists
 module version 1.3.0
 
-
 ## How to use:
 inseret follwing code into your template or cms page and set oxID of a category as _oxid=""_ parameter:  
 __newest category products / neuste Produkte der Kategorie:__  
@@ -21,6 +20,9 @@ __category topseller / Topseller der Kategorie:__
   
 * add ``[{ ... file="widget/product/list.tpl"}]`` to use custom template  
   default template is _widet/product/list.tpl_
+
+* add ``[{ ... type="infogrid"}]`` to change list type
+  default list type is _grid_
   
 * add ``[{ ... head=""}]`` for custom title  
   apply __|oxmultilangassign__ when using language idents: ``[{ ... head="LANG_IDENT"|oxmultilangassign }]``
