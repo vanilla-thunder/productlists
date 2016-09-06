@@ -3,6 +3,7 @@ by Marat Bedoev
 https://github.com/vanilla-thunder/vt-productlists
 module version 1.3.0
 
+
 ## How to use:
 inseret follwing code into your template or cms page and set oxID of a category as _oxid=""_ parameter:  
 __newest category products / neuste Produkte der Kategorie:__  
