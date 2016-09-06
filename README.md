@@ -1,6 +1,6 @@
 ## additional product list for OXID eShop
 by Marat Bedoev  
-https://github.com/vanilla-thunder/vt-productlists  
+https://marat.ws/vt-productlists-produktlisten-fuer-besseres-marketing/  
 module version 1.3.0
 
 ## How to use:
