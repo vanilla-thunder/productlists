@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  - additional product list for OXID eShop CE
+ *  - additional product list for OXID eShop
  * Copyright (C) 2016  
  * info:  m@marat.ws
  *
@@ -22,9 +22,9 @@ $sMetadataVersion = '1.1';
 $aModule = array(
     'id'          => 'vt-productlists',
     'title'       => '[vt] product lists',
-    'description' => 'additional product list for OXID eShop CE 4.9<br/><b style="display:inline-block;float:left;line-height:18px;">newest version:</b><img src="' . $v . '"/><br/>(no need to update if you already have this version)',
+    'description' => 'additional product list for OXID eShop 4.9<br/><b style="display:inline-block;float:left;line-height:18px;">newest version:</b><img src="' . $v . '"/><br/>(no need to update if you already have this version)',
     'thumbnail'   => 'oxid-vt.jpg',
-    'version'     => '1.2.0',
+    'version'     => '1.3.0',
     'author'      => 'Marat Bedoev, ',
     'email'       => 'm@marat.ws',
     'url'         => 'https://github.com/vanilla-thunder/vt-productlists',
